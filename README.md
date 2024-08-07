@@ -35,7 +35,7 @@
 
 ###
 
-<p align="left"><h2>I'm Ibrahim Fathi from Cairo - Egypt</h2><br><br>- 🔭 I’m working as Cross-Platform Mobile Application Dev<br>- 📚 I'm currently learning React Native & Node JS<br>- ⚡ In my free time I always read tech related content, Creating Personal Projects, Playing Some Games.</p>
+<p align="left"><h2>I'm Ibrahim Fathi from Cairo - Egypt</h2><br><br>- 🔭 I’m Mobile App Developer<br>- 📚 I'm Working as React Native Developer & Flutter Freelancer<br>- ⚡ In my free time I always read tech related content, Creating Personal Projects, Playing Some Games.</p>
 
 ###
 
