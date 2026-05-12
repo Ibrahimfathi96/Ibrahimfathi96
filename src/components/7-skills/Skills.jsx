@@ -2,46 +2,72 @@ import "./skills.css";
 import { motion } from "framer-motion";
 
 const Skills = () => {
-  const skillCategories = [
+  const skillGroups = [
     {
-      title: "Mobile Development",
+      title: "Mobile",
       skills: [
-        { name: "React Native", level: 95, experience: "3+ years" },
-        { name: "Flutter", level: 90, experience: "3+ years" },
-        { name: "TypeScript", level: 85, experience: "2+ years" },
-        { name: "JavaScript", level: 95, experience: "3+ years" },
-        { name: "Dart", level: 90, experience: "3+ years" },
+        "React Native (CLI)",
+        "Flutter",
+        "TypeScript",
+        "JavaScript",
+        "Dart",
       ],
+    },
+    {
+      title: "State & Data",
+      skills: ["Redux Toolkit", "React Query", "Context API"],
     },
     {
       title: "Backend & APIs",
       skills: [
-        { name: "Node.js", level: 80, experience: "1.5+ years" },
-        { name: "Express.js", level: 75, experience: "1.5+ years" },
-        { name: "Firebase", level: 85, experience: "3+ years" },
-        { name: "Supabase", level: 75, experience: "1+ year" },
-        { name: "REST APIs", level: 90, experience: "3+ years" },
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "Firebase",
+        "Supabase",
+        "REST APIs",
       ],
     },
     {
-      title: "Tools & Platform",
+      title: "Integrations",
       skills: [
-        { name: "Git & GitHub", level: 90, experience: "3+ years" },
-        { name: "VS Code", level: 95, experience: "3+ years" },
-        { name: "Postman", level: 85, experience: "3+ years" },
-        { name: "Figma", level: 70, experience: "3+ year" },
-        { name: "App Store Connect", level: 85, experience: "2+ year" },
+        "Pusher",
+        "OneSignal",
+        "Payment Gateways",
+        "Deep Linking",
+        "Cloudflare",
       ],
+    },
+    {
+      title: "Infrastructure",
+      skills: [
+        "App Store Connect",
+        "Google Play Console",
+        "OTA Updates",
+        "CI/CD",
+      ],
+    },
+    {
+      title: "Specialisations",
+      skills: [
+        "RTL/LTR Layouts",
+        "BiDi Arabic/English Rendering",
+        "Performance Optimization & Profiling",
+        "Multilingual Apps",
+      ],
+    },
+    {
+      title: "Tooling",
+      skills: ["Git & GitHub", "Postman", "Figma", "VS Code"],
     },
   ];
 
   const achievements = [
     { metric: "14+", label: "Live Apps Published", icon: "📱" },
     { metric: "3+", label: "Years Experience", icon: "⏳" },
-    { metric: "100%", label: "Client Satisfaction", icon: "⭐" },
-    // { metric: "5M+", label: "App Downloads", icon: "📊" },
-    { metric: "99.9%", label: "App Stability", icon: "🛡️" },
-    // { metric: "3", label: "Countries Served", icon: "🌍" },
+    { metric: "10K+", label: "Total Downloads", icon: "📊" },
+    { metric: "10", label: "Countries Active", icon: "🌍" },
+    { metric: "4.5–5★", label: "Store Ratings", icon: "⭐" },
   ];
 
   return (
@@ -74,36 +100,20 @@ const Skills = () => {
 
         {/* Skills Matrix */}
         <div className="skills-matrix">
-          {skillCategories.map((category, categoryIndex) => (
+          {skillGroups.map((group, groupIndex) => (
             <motion.div
-              key={categoryIndex}
-              initial={{ opacity: 0, x: categoryIndex % 2 === 0 ? -50 : 50 }}
+              key={groupIndex}
+              initial={{ opacity: 0, x: groupIndex % 2 === 0 ? -50 : 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: categoryIndex * 0.2 }}
+              transition={{ duration: 0.6, delay: groupIndex * 0.15 }}
               className="skill-category"
             >
-              <h3 className="category-title">{category.title}</h3>
-              <div className="skills-list">
-                {category.skills.map((skill, skillIndex) => (
-                  <div key={skillIndex} className="skill-item">
-                    <div className="skill-header">
-                      <span className="skill-name">
-                        {skill.name}{" "}
-                        <span className="skill-experience">
-                          ({skill.experience})
-                        </span>
-                      </span>
-                      <span className="skill-percentage">{skill.level}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <motion.div
-                        className="skill-progress"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: skillIndex * 0.1 }}
-                      />
-                    </div>
-                  </div>
+              <h3 className="category-title">{group.title}</h3>
+              <div className="skill-tags">
+                {group.skills.map((skill, i) => (
+                  <span key={i} className="skill-tag">
+                    {skill}
+                  </span>
                 ))}
               </div>
             </motion.div>
@@ -139,6 +149,21 @@ const Skills = () => {
               <p>14+ Apps on App Store & Google Play</p>
               <span className="cert-year">2024</span>
             </div>
+          </div>
+        </motion.div>
+
+        {/* Languages */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          className="languages"
+        >
+          <h3 className="subsection-title">Languages</h3>
+          <div className="lang-row">
+            <span className="lang-item">🇦🇪 Arabic : Native</span>
+            <span className="lang-item">🇬🇧 English : Professional</span>
+            <span className="lang-item">🇩🇪 German : Learning</span>
           </div>
         </motion.div>
       </div>

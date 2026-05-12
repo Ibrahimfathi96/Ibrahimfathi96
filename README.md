@@ -143,13 +143,13 @@ I came from Flutter and was hesitant to join the scholarship. Joining it anyway 
 
 ## Personal projects
 
-| Project | Stack | What it is |
-|---------|-------|------------|
-| [CoffeeHouse](https://github.com/Ibrahimfathi96/CoffeeHouse) | TypeScript · React Native | Coffee shop ordering app |
-| [NFT-MarketPlace](https://github.com/Ibrahimfathi96/NFT-MarketPlace) | JavaScript · React Native | NFT browsing and marketplace |
-| [ShopSavvy](https://github.com/Ibrahimfathi96/ShopSavvy) | Dart · Flutter | E-commerce shopping app |
-| [YumYumXpress](https://github.com/Ibrahimfathi96/YumYumXpress) | JavaScript · React Native | Food delivery app |
-| [Amazon Clone](https://github.com/Ibrahimfathi96/Amazon-Clone-with-NodeJS) | Dart · Node.js | Full-stack Amazon clone |
+| Project                                                                    | Stack                     | What it is                   |
+| -------------------------------------------------------------------------- | ------------------------- | ---------------------------- |
+| [CoffeeHouse](https://github.com/Ibrahimfathi96/CoffeeHouse)               | TypeScript · React Native | Coffee shop ordering app     |
+| [NFT-MarketPlace](https://github.com/Ibrahimfathi96/NFT-MarketPlace)       | JavaScript · React Native | NFT browsing and marketplace |
+| [ShopSavvy](https://github.com/Ibrahimfathi96/ShopSavvy)                   | Dart · Flutter            | E-commerce shopping app      |
+| [YumYumXpress](https://github.com/Ibrahimfathi96/YumYumXpress)             | JavaScript · React Native | Food delivery app            |
+| [Amazon Clone](https://github.com/Ibrahimfathi96/Amazon-Clone-with-NodeJS) | Dart · Node.js            | Full-stack Amazon clone      |
 
 ---
 

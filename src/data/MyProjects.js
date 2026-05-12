@@ -5,7 +5,7 @@ export const MyProjects = [
     id: 1,
     projectTitle: "Riya Shop KSA",
     projectDescription:
-      "E-commerce platform for multi-brand clothing stores built with React Native. Features include product catalog, shopping cart, authentication, and payment integration.",
+      "Multi-brand clothing e-commerce app built with React Native. Features product catalog, cart, authentication, and payment integration. ~10,000 users across iOS and Android in the Saudi market.",
     category: ["React Native", "JS / TS"],
     projectType: "professional",
     imagePath:
@@ -19,7 +19,7 @@ export const MyProjects = [
     id: 5,
     projectTitle: "Jeyad",
     projectDescription:
-      "Social media platform for horse owners, competitions, and events. Built with React Native featuring real-time chat, AI Chatbot, event management, Auctions, and community features.",
+      "Social platform for equestrian communities built with React Native. Features realtime chat, AI chatbot, event management, auctions, and community feeds. ~5,000 users · 595K platform interactions · 256K social reach · avg. 1hr session · active across 10 countries. Sponsor of Agenticthon 2026, an AI agents hackathon at Prince Sultan University.",
     category: ["React Native", "JS / TS"],
     projectType: "professional",
     imagePath:
@@ -119,7 +119,7 @@ export const MyProjects = [
     id: 53,
     projectTitle: "Dynamo Car",
     projectDescription:
-      "Smart app that gives users exclusive discount coupons for car maintenance services in Riyadh. Connect with trusted workshops and enjoy special offers on mechanical, electrical, tire, and oil change services — all in one easy-to-use app.",
+      "Smart app that gives users exclusive discount coupons for car maintenance services in Riyadh. Connect with trusted workshops and enjoy special offers on mechanical, electrical, tire, and oil change services all in one easy-to-use app.",
     category: ["React Native", "JS / TS"],
     projectType: "professional",
     imagePath:
@@ -302,11 +302,11 @@ export const MyProjects = [
   },
   {
     id: 23,
-    projectTitle: "Microsoft To-do List",
+    projectTitle: "DPE Microsoft To Do",
     projectDescription:
-      "Microsoft To-do List Clone Application. it's DPE Graduation Project using React Native & Expo & Redux and backend using Node Js & Express & MongoDB.",
+      "Full-stack graduation project built during a React Native scholarship at Nile University, modeled on Microsoft To Do. Built solo end-to-end: React Native mobile app, Node.js/Express backend, MongoDB, authentication, and deployment. Placed 1st among all scholarship graduates. Led directly to an internship at Nile University the starting point of a production React Native career.",
     category: ["React Native", "Node Js", "JS / TS"],
-    projectType: "educational",
+    projectType: "professional",
     imagePath:
       "https://res.cloudinary.com/doehu91ch/image/upload/v1698017847/Portofolio/dhgt1n1kiaismwxmyglt.png",
     github: "https://github.com/Ibrahimfathi96/DPE-MicrosoftTodoList",

@@ -70,19 +70,20 @@ const Hero = () => {
           <div className="icon-verified"></div>
         </div>
         <h2 className="title-description">
-          Software Engineer | Mobile App Developer
+          Mobile Software Engineer · React Native
         </h2>
+        <p className="sub-title-tagline">
+          Building production-grade mobile systems end-to-end.
+        </p>
         <p className="sub-title">
-          Proactive and self-driven Mobile App Developer with a strong track
-          record of building high-quality, cross-platform applications using
-          React Native & Flutter. Analytical problem-solver with a growth
-          mindset, proven ability to deliver results independently and as a
-          collaborative team member. Adaptable and client-focused, adept at
-          crafting custom UI components, integrating diverse APIs, and managing
-          complex application state. Dedicated and detail-oriented, proficient
-          in Dart, JavaScript/TypeScript, and backend technologies (Firebase /
-          Supabase) enabling the end-to-end delivery of 14+ live apps with 4.5–5
-          star ratings on App Store & Google Play.
+          Mobile Software Engineer with 3+ years building and shipping
+          production iOS and Android applications in React Native (CLI) and
+          Flutter. Delivered 14+ live apps end-to-end across e-commerce, social
+          platforms, and service tooling from architecture and implementation to
+          App Store and Google Play release. Experienced in owning production
+          mobile systems end-to-end, including architecture, performance
+          optimization, release management, and debugging complex real-world
+          issues.
         </p>
         <div className="all-icons flex">
           <a

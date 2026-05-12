@@ -18,8 +18,6 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-% only for pdflatex
-% \input{glyphtounicode}
 
 % fontawesome
 \usepackage{fontawesome5}
@@ -45,16 +43,13 @@
   \llap{\contour{white}{#1}}%
 }
 
-
 % custom font: helvetica-style
 \usepackage{tgheros}
-\renewcommand*\familydefault{\sfdefault} 
-%% Only if the base font of the document is to be sans serif
+\renewcommand*\familydefault{\sfdefault}
 \usepackage[T1]{fontenc}
 
-
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -73,13 +68,9 @@
 \setlength{\tabcolsep}{0in}
 
 % sans serif sections
-\titleformat {\section}{
-    \bfseries \vspace{2pt} \raggedright \large % header section
+\titleformat{\section}{
+    \bfseries \vspace{2pt} \raggedright \large
 }{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
-
-% only for pdflatex
-% Ensure that generate pdf is machine readable/ATS parsable
-% \pdfgentounicode=1
 
 %-------------------------
 % Custom commands
@@ -92,8 +83,8 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
-      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\
+      \textit{#3} & {\color{dark-grey} \small #4}\\
     \end{tabular*}\vspace{-4pt}
 }
 
@@ -115,7 +106,6 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-% CHANGED default leftmargin  0.15 in
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
@@ -125,7 +115,6 @@
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \begin{document}
 
@@ -143,48 +132,47 @@
 
 %-----------SUMMARY-----------
 \section{SUMMARY}
-\small{Proactive and \textbf{self-driven} Mobile App Developer with a strong track record of building high-quality, cross-platform applications using \textbf{React Native \& Flutter}. Analytical problem-solver with a \textbf{growth mindset}, proven ability to deliver results independently and as a collaborative team member. Adaptable and \textbf{client-focused}, adept at crafting custom UI components, integrating diverse APIs, and managing complex application state. Dedicated and detail-oriented, proficient in Dart, JavaScript/TypeScript, and backend technologies (Firebase / Supabase) enabling the end-to-end delivery of \textbf{14+ live apps} with \textbf{4.5--5 star ratings} on App Store \& Google Play.}
+\small{Mobile Software Engineer with \textbf{3+ years} building and shipping production iOS and Android applications in React Native (CLI) and Flutter. Delivered \textbf{14+ live apps} end-to-end across e-commerce, social platforms, and service tooling from architecture and implementation to App Store and Google Play release. Experienced in owning production mobile systems end-to-end, including architecture, performance optimization, release management, and debugging complex real-world issues.}
 
 %-----------EXPERIENCE-----------
 \section{EXPERIENCE}
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Softoio LLC}{May 2024 - Present}
+      {Softoio LLC}{May 2024 -- Present}
       {React Native Developer (Full-time)}{Remote}
       \resumeItemListStart
-        \resumeItem{\textbf{Sole developer} for \textbf{5 mobile apps} end-to-end, from architecture to App Store \& Google Play deployment}
-        \resumeItem{Built and maintained \textbf{multiple e-commerce applications} (clothing, shoes, kids' fashion)}
-        \resumeItem{Developed a \textbf{social media app} for horse/camel/falcon enthusiasts, competitions, and community engagement}
-        \resumeItem{Integrated core features: authentication, shopping cart, payments, and API integrations for seamless UX}
-        \resumeItem{Published apps achieved \textbf{4.5--5 star ratings} and accumulated \textbf{8,000+ downloads} across platforms}
-        \resumeItem{\textbf{Supervised 4 developers} across \textbf{7 additional apps}; oversaw full delivery from development to store publication}
-        \resumeItem{\textbf{Key Apps}: Riya, Jeyad, Neyaq, Qarnas, AlAmthal, Matlob, Pizza \& Pizza Delivery, Dynamo Car}
+        \resumeItem{\textbf{Sole mobile engineer} on 5 apps delivered end-to-end: architecture, implementation, and App Store/Play Store release}
+        \resumeItem{Built \textbf{Jeyad}, a social platform for equestrian communities with realtime chat, AI chatbot, event management, and auctions; serving thousands of users with \textbf{595K+ platform interactions} and multi-country reach}
+        \resumeItem{Built \textbf{Riya Shop KSA}, a multi-brand e-commerce app with product catalog, cart, authentication, and payment integration; \textbf{\textasciitilde10,000 users}}
+        \resumeItem{Extended the Jeyad platform to \textbf{Neyaq} (camels) and \textbf{Qarnas} (falcons)}
+        \resumeItem{Collaborated with and guided developers across \textbf{7 additional production mobile projects}}
+        \resumeItem{Jeyad sponsored \textbf{Agenticthon 2026}, an AI agents hackathon at Prince Sultan University, May 2026}
+        \resumeItem{\textbf{Key Apps}: Riya, Jeyad, Neyaq, Qarnas, AlAmthal, Matlob, Dynamo Car}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Contract - Senior React Native Developer}{Apr. 2024 - Feb. 2025}
+      {Contract -- Senior React Native Developer}{Apr. 2024 -- Feb. 2025}
       {React Native Developer}{Remote}
       \resumeItemListStart
-        \resumeItem{\textbf{Solo-delivered 1 app} end-to-end and actively maintained \textbf{5+ existing live apps} alongside a senior developer}
-        \resumeItem{Implemented UI features, bug fixes, and new functionality based on user feedback across \textbf{multiple platforms}}
-        \resumeItem{Contributed to invoice generation, VAT compliance, and purchase/sales tracking features for the \textbf{Saudi market}}
-        \resumeItem{Built coupon redemption and water delivery platforms across \textbf{3 regional markets}}
-        \resumeItem{\textbf{Key Apps}: Gayar, NICHE, Vom Accounting Software, Win Coupons App, AquaHana}
+        \resumeItem{Solo-delivered \textbf{NICHE Real Estate} end-to-end; supported and maintained \textbf{Gayar} and 4+ additional live apps alongside a senior developer, implementing features, bug fixes, and user-feedback-driven improvements}
+        \resumeItem{Built invoice generation, \textbf{VAT compliance}, and purchase/sales tracking features for the Saudi market (Vom Accounting Software)}
+        \resumeItem{Delivered coupon redemption platform (Win Coupons) and water delivery logistics app (AquaHana) across \textbf{3 regional markets}}
+        \resumeItem{\textbf{Key Apps}: Gayar, NICHE Real Estate, Vom Accounting Software, Win Coupons App, AquaHana}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Freelance Projects}{Aug. 2023 - Present}
+      {Freelance Projects}{Aug. 2023 -- Present}
       {Mobile App Developer (Freelance)}{Remote}
       \resumeItemListStart
-        \resumeItem{\textbf{Solo-delivered 2 apps} including Rakd -- a \textbf{3-role platform} (client, worker, admin) for car wash booking with real-time tracking}
-        \resumeItem{Built Halalah (Flutter) -- live on App Store with \textbf{4.5+ star rating}; coupon app for major Saudi brands}
-        \resumeItem{\textbf{Supervised 1 developer} on PAL-IN Store: full-stack e-commerce app for Palestinian local brands}
+        \resumeItem{Led development and delivery of \textbf{2 production mobile applications} including Rakd, a \textbf{3-role platform} (client, worker, admin) for car wash booking with real-time tracking}
+        \resumeItem{Built Halalah in Flutter, live on App Store with \textbf{4.5+ star rating}; coupon app for major Saudi brands}
+        \resumeItem{Collaborated with and guided a developer on PAL-IN Store: full-stack e-commerce app for Palestinian local brands}
         \resumeItem{Collaborated on Fatwalraq -- Flutter app for Iraqi Fiqh Academy facilitating Islamic fatwas}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Nile University}{Nov. 2023 - Feb. 2024}
+      {Nile University}{Nov. 2023 -- Feb. 2024}
       {React Native Developer Intern}{Cairo, Egypt}
       \resumeItemListStart
         \resumeItem{Trained on \textbf{2 React Native apps}, implementing custom UI components, navigation, and async operations}
@@ -200,63 +188,40 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Riya Shop KSA} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/eg/app/riya-shop-ksa/id6737839477}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.online.applaiteknoloji.riya}{\myuline{Play}} -- 2024}
-          \resumeItemListStart
-            \resumeItem{\textbf{Multi-brand clothing e-commerce} with product catalog, cart, auth, and payment integration}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Jeyad} $|$ \emph{React Native, TypeScript, Firebase}}{\href{https://apps.apple.com/us/app/jeyad/id6743980348}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.jeyad}{\myuline{Play}} -- 2024}
+          {\textbf{Jeyad} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/us/app/jeyad/id6743980348}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.jeyad}{\myuline{Play}} -- 2025}
           \resumeItemListStart
             \resumeItem{Social platform for \textbf{horse owners} with real-time chat, AI Chatbot, events, and auctions; same concept extended to \textbf{Neyaq} (camels) \& \textbf{Qarnas} (falcons)}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Rakd} $|$ \emph{React Native, TypeScript, Firebase}}{\href{https://apps.apple.com/us/app/id6751469641}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.rakd}{\myuline{Play}} -- 2024}
+          {\textbf{Riya Shop KSA} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/eg/app/riya-shop-ksa/id6737839477}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.online.applaiteknoloji.riya}{\myuline{Play}} -- 2024}
+          \resumeItemListStart
+            \resumeItem{\textbf{Multi-brand clothing e-commerce} with product catalog, cart, auth, and payment integration; \textasciitilde10,000 users}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Rakd} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/us/app/id6751469641}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.rakd}{\myuline{Play}} -- 2024}
           \resumeItemListStart
             \resumeItem{\textbf{Car wash booking app} with client/worker roles, real-time tracking, payments, loyalty rewards, and admin dashboard}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{AlAmthal} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/us/app/id6751743241}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.Alamthal.app}{\myuline{Play}} -- 2024}
+          {\textbf{NICHE Real Estate} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/eg/app/niche-real-estate/id6743856405}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.nichegy.niche}{\myuline{Play}} -- 2024}
           \resumeItemListStart
-            \resumeItem{\textbf{Electronics \& tech accessories} store covering mobile, networking, IoT, and home appliances}
+            \resumeItem{Real estate platform with \textbf{advanced search filters} and virtual tours; solo-delivered end-to-end}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Matlob} $|$ \emph{Flutter, Dart}}{\href{https://apps.apple.com/us/app/id6755442648}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.matloub.applaitech}{\myuline{Play}} -- 2024}
+          {\textbf{DPE Microsoft To Do} $|$ \emph{React Native, Node.js, Express, MongoDB}}{\href{https://github.com/Ibrahimfathi96/DPE-MicrosoftTodoList}{\myuline{GitHub}} -- 2023}
           \resumeItemListStart
-            \resumeItem{\textbf{Bilingual classifieds app} for product/service requests with in-app chat, categories, and push notifications}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Niche -- Real Estate} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/eg/app/niche-real-estate/id6743856405}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.nichegy.niche}{\myuline{Play}} -- 2024}
-          \resumeItemListStart
-            \resumeItem{Real estate platform with \textbf{advanced search filters} and virtual tours}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Dynamo Car} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/us/app/id6755240880}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.Dynamo.app}{\myuline{Play}} -- 2025}
-          \resumeItemListStart
-            \resumeItem{\textbf{Discount coupon app} for car maintenance in Riyadh; covers mechanical, electrical, tire, and oil services}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Gayar} $|$ \emph{React Native, TypeScript}}{\href{https://apps.apple.com/us/app/id6478932610}{\myuline{App Store}} \& \href{https://play.google.com/store/apps/details?id=com.gayar}{\myuline{Play}} -- 2024}
-          \resumeItemListStart
-            \resumeItem{\textbf{Automotive spare parts} e-commerce with compatibility checker and dealer network integration}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Halalah} $|$ \emph{Flutter, Dart, Firebase}}{\href{https://apps.apple.com/us/app/id6670790819}{\myuline{App Store}} -- 2024}
-          \resumeItemListStart
-            \resumeItem{Flutter \textbf{coupon app} for famous brands with limited-time discount offers}
+            \resumeItem{Full-stack graduation project built solo end-to-end: React Native mobile app, Node.js/Express backend, MongoDB, authentication, and deployment}
+            \resumeItem{\textbf{Placed 1st} among all scholarship graduates at Nile University DPE Program; led directly to an internship and the start of a production React Native career}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
 
-%-----------EDUCATION \& CERTIFICATIONS-----------
+%-----------EDUCATION & CERTIFICATIONS-----------
 \section{EDUCATION \& CERTIFICATIONS}
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -274,17 +239,30 @@
   \resumeSubHeadingListEnd
 
 
-%
-%-----------PROGRAMMING SKILLS-----------
+%-----------SKILLS-----------
 \section{SKILLS}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-     \textbf{Mobile Development} {: React Native, Flutter, TypeScript, JavaScript, Dart}\vspace{2pt} \\
-     \textbf{Backend \& APIs}    {: Node.js, Express.js, Firebase, Supabase, REST APIs}\vspace{2pt} \\
-     \textbf{Tools \& Platforms} {: Git \& GitHub, Postman, Figma, App Store Connect, Google Play Console, VS Code}
+     \textbf{Mobile}             {: React Native (CLI), Flutter, TypeScript, JavaScript, Dart}\vspace{2pt} \\
+     \textbf{State \& Data}      {: Redux Toolkit, React Query, Context API}\vspace{2pt} \\
+     \textbf{Backend \& APIs}    {: Node.js, Express.js, MongoDB, Firebase, Supabase, REST APIs}\vspace{2pt} \\
+     \textbf{Integrations}       {: Pusher, OneSignal, Payment Gateways, Deep Linking, Cloudflare}\vspace{2pt} \\
+     \textbf{Infrastructure}     {: App Store Connect, Google Play Console, OTA Updates, CI/CD}\vspace{2pt} \\
+     \textbf{Specialisations}    {: RTL/LTR Layouts, BiDi Arabic/English Rendering, Performance Optimization \& Profiling, Multilingual Apps}\vspace{2pt} \\
+     \textbf{Tooling}            {: Git \& GitHub, Postman, Figma, VS Code}
     }}
  \end{itemize}
 
+
+%-----------LANGUAGES-----------
+\section{LANGUAGES}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Arabic} {: Native} \hspace{1pt} $|$
+     \hspace{1pt} \textbf{English} {: Professional} \hspace{1pt} $|$
+     \hspace{1pt} \textbf{German} {: Learning}
+    }}
+ \end{itemize}
 
 %-------------------------------------------
 \end{document}
